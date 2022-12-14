@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1>Mis Citas - Consultorio Familiar</h1>
+    <h1>Bienvenido a Medicina Familiar </h1>
   </div>
-  
 </template>
 
 <script>

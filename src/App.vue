@@ -27,15 +27,13 @@
 
       <v-spacer></v-spacer>
 
-
       <v-btn
         v-for="(item, index) in rutas" :key="index"
         text
-        @click="InsertarRuta(item.ruta)"
+        @click="insertarRuta(item.ruta)"
       >
         <span class="mr-2">{{item.nombre}}</span>
       </v-btn>
-
     </v-app-bar>
 
     <v-main>
@@ -51,12 +49,13 @@ export default {
 
   data: () => ({
     rutas:[
-      {nombre:'Menu Principal', ruta:'/'},
-      {nombre:'Información', ruta: '/about'}     
+      {nombre:'Inicio', ruta:'/'},
+      {nombre:'Información', ruta:'/about'},
+      {nombre:'Crear una cita', ruta:'/citas'}
+
     ]
   }),
-
-  methods:{
+  methods: {
     insertarRuta(ruta){
       this.$router.push(ruta);
     }
